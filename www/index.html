@@ -65,10 +65,412 @@
                         </label>
                         <input name="password" id="password" placeholder="password" value="" type="password">
                     </div>
-                    <a data-role="button" data-theme="a" href="#page1">
+                    <a data-role="button" data-theme="a" href="#home">
                         Login
                     </a>
                 </form>
+            </div>
+        </div>
+        
+        <!-- Home -->
+        <div data-role="page" id="home">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-direction="reverse" href="#login" class="ui-btn-right">
+                    Exit
+                </a>
+                <h3>
+                    PayStar
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="e" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Menu
+                    </li>
+                    <li data-theme="b">
+                        <a href="#pay" data-transition="slide">
+                            Collect Payment
+                        </a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#reports" data-transition="slide">
+                            Reports
+                        </a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#balance" data-transition="slide">
+                            Balance
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Balance -->
+        <div data-role="page" id="balance">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-direction="reverse" data-rel="back" 
+                data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <a data-role="button" data-direction="reverse" href="#login" class="ui-btn-right">
+                    Exit
+                </a>
+                <h3>
+                    PayStar
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Balance
+                    </li>
+                    <li data-theme="c">
+                        1,750,000.00
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- reports -->
+        <div data-role="page" id="reports">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-direction="reverse" data-rel="back"
+                data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <a data-role="button" data-direction="reverse" href="#login" class="ui-btn-right">
+                    Exit
+                </a>
+                <h3>
+                    PayStar
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="e" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Transaction Report
+                    </li>
+                    <li data-theme="b">
+                        <a href="#today" data-transition="slide">
+                            Today
+                        </a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#yesterday" data-transition="slide">
+                            Yesterday
+                        </a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#week" data-transition="slide">
+                            Summary (Week)
+                        </a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#month" data-transition="slide">
+                            Summary (Month)
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- today -->
+        <div data-role="page" id="today">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-direction="reverse" data-rel="back"
+                data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <a data-role="button" data-direction="reverse" href="#login" class="ui-btn-right">
+                    Exit
+                </a>
+                <h3>
+                    PayStar
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="e" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Today's Transactions
+                    </li>
+                    <li data-theme="c">
+                        <h3>12,500.00</h3>
+                        <p><strong>Card: </strong>*1234</p>
+                        <p><strong>Txn:  </strong>123456</p>
+                        <p class="ui-li-aside"><strong>12:32</strong>PM</p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>9,700.00</h3>
+                        <p><strong>Card: </strong>*9191</p>
+                        <p><strong>Txn:  </strong>123457</p>
+                        <p class="ui-li-aside"><strong>12:42</strong>PM</p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>6,500.00</h3>
+                        <p><strong>Card: </strong>*2372</p>
+                        <p><strong>Txn:  </strong>123458</p>
+                        <p class="ui-li-aside"><strong>12:45</strong>PM</p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>12,000.00</h3>
+                        <p><strong>Card: </strong>*1112</p>
+                        <p><strong>Txn:  </strong>123459</p>
+                        <p class="ui-li-aside"><strong>12:47</strong>PM</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- yesterday -->
+        <div data-role="page" id="yesterday">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-direction="reverse" data-rel="back"
+                data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <a data-role="button" data-direction="reverse" href="#login" class="ui-btn-right">
+                    Exit
+                </a>
+                <h3>
+                    PayStar
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="e" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Yesterday's Transactions
+                    </li>
+                    <li data-theme="c">
+                        <h3>12,500.00</h3>
+                        <p><strong>Card: </strong>*1234</p>
+                        <p><strong>Txn:  </strong>123456</p>
+                        <p class="ui-li-aside"><strong>12:32</strong>PM</p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>9,700.00</h3>
+                        <p><strong>Card: </strong>*9191</p>
+                        <p><strong>Txn:  </strong>123457</p>
+                        <p class="ui-li-aside"><strong>12:42</strong>PM</p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>6,500.00</h3>
+                        <p><strong>Card: </strong>*2372</p>
+                        <p><strong>Txn:  </strong>123458</p>
+                        <p class="ui-li-aside"><strong>12:45</strong>PM</p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>12,000.00</h3>
+                        <p><strong>Card: </strong>*1112</p>
+                        <p><strong>Txn:  </strong>123459</p>
+                        <p class="ui-li-aside"><strong>12:47</strong>PM</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- week -->
+        <div data-role="page" id="week">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-direction="reverse" data-rel="back"
+                data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <a data-role="button" data-direction="reverse" href="#login" class="ui-btn-right">
+                    Exit
+                </a>
+                <h3>
+                    PayStar
+                </h3>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="e" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        This Week's Transactions
+                    </li>
+                    <li data-theme="c">
+                        <h3>239,000.00</h3>
+                        <p class="ui-li-aside"><strong>Today</strong></p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>370,000.00</h3>
+                        <p class="ui-li-aside"><strong>Yesterday</strong></p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>395,000.00</h3>
+                        <p class="ui-li-aside"><strong>Friday</strong></p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>310,000.00</h3>
+                        <p class="ui-li-aside"><strong>Thursday</strong></p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>325,000.00</h3>
+                        <p class="ui-li-aside"><strong>Wednesday</strong></p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>351,000.00</h3>
+                        <p class="ui-li-aside"><strong>Tuesday</strong></p>
+                    </li>
+                    <li data-theme="c">
+                        <h3>299,000.00</h3>
+                        <p class="ui-li-aside"><strong>Monday</strong></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Pay -->
+        <div data-role="page" id="pay">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-direction="reverse" data-rel="back" 
+                data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <a data-role="button" data-direction="reverse" href="#page1" class="ui-btn-right">
+                    Exit
+                </a>
+                <h3>
+                    PayStar
+                </h3>
+            </div>
+            <div data-role="content">
+                <h2>
+                    Pay
+                </h2>
+                <div data-role="fieldcontain">
+                    <label for="textinput4">
+                        Amount
+                    </label>
+                    <input name="" id="textinput4" placeholder="0.00" value="" type="number">
+                </div>
+                <div data-role="fieldcontain">
+                    <label for="textinput5">
+                        Reference
+                    </label>
+                    <input name="" id="textinput5" placeholder="reference" value="" type="text">
+                </div>
+                <form action="">
+                    <div data-role="fieldcontain">
+                        <label for="card_no">
+                            Card Number
+                        </label>
+                        <input name="card_no" id="card_no" placeholder="card number" value=""
+                        type="text">
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="textinput6">
+                            Expiry
+                        </label>
+                        <input name="" id="textinput6" placeholder="" value="" type="month">
+                    </div>
+                    <div data-role="fieldcontain">
+                        <label for="textinput7">
+                            CVV
+                        </label>
+                        <input name="" id="textinput7" placeholder="card verification value" value=""
+                        type="text">
+                    </div>
+                    <a data-role="button" data-theme="a" href="#pay2" data-icon="arrow-r"
+                    data-iconpos="right">
+                        Proceed
+                    </a>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Pay 2 -->
+        <div data-role="page" id="pay2">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-direction="reverse" data-rel="back"
+                data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <a data-role="button" data-direction="reverse" href="#page1" class="ui-btn-right">
+                    Exit
+                </a>
+                <h3>
+                    PayStar
+                </h3>
+            </div>
+            <div data-role="content">
+                <h2>
+                    Pay - OTP
+                </h2>
+                <ul data-role="listview" data-divider-theme="e" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Amount
+                    </li>
+                    <li data-theme="c">
+                        12,500.00
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        Transaction Reference
+                    </li>
+                    <li data-theme="c">
+                        1234567
+                    </li>
+                </ul>
+                <div data-role="fieldcontain">
+                    <label for="textinput8">
+                        One Time Password
+                    </label>
+                    <input name="" id="textinput8" placeholder="PIN" value="" type="text">
+                </div>
+                <a data-role="button" data-theme="a" href="#pay3" data-icon="arrow-r"
+                data-iconpos="right">
+                    Confirm Password
+                </a>
+            </div>
+        </div>
+        
+        <!-- pay 3 -->
+        <div data-role="page" id="pay3">
+            <div data-theme="a" data-role="header" data-position="fixed">
+                <a data-role="button" data-direction="reverse" data-rel="back"
+                data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <a data-role="button" data-direction="reverse" href="#page1" class="ui-btn-right">
+                    Exit
+                </a>
+                <h3>
+                    PayStar
+                </h3>
+            </div>
+            <div data-role="content">
+                <h2>
+                    Payment Successful
+                </h2>
+                <ul data-role="listview" data-divider-theme="e" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Amount
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page1" data-transition="slide">
+                            12,500.00
+                        </a>
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        Transaction Reference
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page1" data-transition="slide">
+                            1234567
+                        </a>
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        Payment Reference
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page1" data-transition="slide">
+                            20131105807245-5
+                        </a>
+                    </li>
+                </ul>
+                <a data-role="button" data-theme="a" href="#menu">
+                    Close
+                </a>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
